@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+header > h1 {
+    margin: 0px 0px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.cards-container-2 {
+
+}
+
+.card-generic-container {
+    background-color: antiquewhite;
+    width: 200px;
+    height: 250px;
+}
+
+.card-team_builder-container {
+    border: 1px solid blue;
+}
