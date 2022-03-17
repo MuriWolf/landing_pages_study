@@ -126,6 +126,8 @@
     }
 }
 
+
+
 @media only screen and (max-width: 570px) { 
     .grid-historias {
         display: flex;

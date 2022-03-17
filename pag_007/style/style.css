@@ -1,12 +1,20 @@
 @charset "UTF-8";
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --gray: rgb(78, 78, 78);
+    --light_gray: rgb(165, 165, 165);
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
 
 header {
     text-align: center;
-    width: 400px;
     margin: auto;
     margin-top: 60px;
 }
@@ -15,24 +23,102 @@ header > h1 {
     margin: 0px 0px;
 }
 
+#header-title-1 {
+    font-weight: 400;
+    color: var(--light_gray)
+}
+
+#header-title-2 {
+    font-weight: 600;
+    font-size: 205%;
+    color: var(--gray)
+}
+
+.header-text{
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 42px;
+    font-weight: 600;
+    color: var(--light_gray)
+}
+
+/* PRINCIPAL */
+
 .cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
-}
-
-.cards-container-2 {
-
 }
 
 .card-generic-container {
-    background-color: antiquewhite;
-    width: 200px;
-    height: 250px;
+    background-color: #ffffff;
+    width: 310px;
+    height: 210px;
+    padding: 10px;
+    margin: 22px;
+    border-radius: 6px;
+    box-shadow: 3px 6px 18px #0000002e;
+}
+
+.card-generic-title {
+    margin-bottom: 0px;
+}
+
+.card-generic-text {
+    padding: 0px 12px;
+}
+
+.card-generic-p {
+    font-size: 85%;
+    margin-top: 12px;
+    color: var(--light_gray);
+}
+
+.card-generic-container > img {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .card-team_builder-container {
-    border: 1px solid blue;
+    border-top: 5px solid #ea5353
+}
+
+.card-supervisor-container {
+    border-top: 5px solid #33c0ad;
+}
+
+.card-karma-container {
+    border-top: 5px solid #e0bf65;
+}
+
+.card-calculator-container {
+    border-top: 5px solid #549ef2
+}
+
+.mediaquery * {
+    display: none;
+}
+
+@media only screen and (max-width: 1160px) {
+
+    
+    .card-generic-container {
+        background-color: #ffffff;
+        width: 220px;
+        height: 210px;
+        padding: 10px;
+        margin: 22px;
+        border-radius: 6px;
+        box-shadow: 3px 6px 18px #0000002e;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+    }
 }
