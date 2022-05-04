@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    margin: auto; 
+    margin-top: 200px;
+
+    color: white;
+    background-color: #212832;
+}
+
+.rating-container .star-rating-img {
+    width: 20px;
+    height: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #303844;
+}
+
+.rating-container h1 {
+    margin: 10px 0;
+}
+
+.rating-container p {
+    text-align: left;
+    line-height: 1.5em;
+    color: #7d848e;
+    margin: 10px 0;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stars .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    padding: 16px;
+    border-radius: 50%;
+
+    background-color: #303844;
+}
+
+.stars .star:hover {
+    background-color: #7b8996;
+}
+
+/* .stars .star: */
+
+.rating-container button[type="submit"] {
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 15px;
+
+    font-family: "Overpass", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+
+    cursor: pointer ;
+    color: white;
+    background-color: #fc7613;
+}
+/* 
+.rating-container button[type="submit"] {
+    
+} */
