@@ -7,14 +7,16 @@
 
 body {
     font-family: "Overpass", sans-serif;
+    background-color: #171b20;
 }
 
 .rating-container {
     display: flex;
     flex-direction: column;
 
-    max-width: 420px;
-    padding: 35px;
+    max-width: 360px;
+    min-height: 400px;
+    padding: 20px 45px;
     border-radius: 20px;
     margin: auto; 
     margin-top: 200px;
@@ -24,8 +26,8 @@ body {
 }
 
 .rating-container .star-rating-img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     padding: 16px;
     border-radius: 50%;
     margin-bottom: 15px;
@@ -37,20 +39,25 @@ body {
 }
 
 .rating-container p {
-    text-align: left;
     line-height: 1.5em;
     color: #7d848e;
     margin: 10px 0;
 }
 
+.rating-container .thank-you-img {
+    height: 140px;
+    width: 180px; 
+    margin: 0 auto 20px auto;
+}
+
 .stars {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
-.stars .star {
+.star {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,11 +70,18 @@ body {
     background-color: #303844;
 }
 
-.stars .star:hover {
+.star:hover {
     background-color: #7b8996;
+    cursor: pointer;
 }
 
-/* .stars .star: */
+.star-selected{
+    background-color: #fc7613;
+}
+
+.star-selected:hover {
+    background-color: #fc7613;
+}
 
 .rating-container button[type="submit"] {
     height: 45px;
@@ -83,7 +97,20 @@ body {
     color: white;
     background-color: #fc7613;
 }
-/* 
-.rating-container button[type="submit"] {
+
+.rating-container button[type="submit"]:hover {
+    color: #fc7613;
+    background-color: white
+}
+
+.highlight-text {
     
-} */
+}
+
+.highlight-text p {
+    background-color: #303844;
+    border-radius: 25px;
+    color: #fc7613;
+    display: inline-block;
+    width: 100%
+} 
