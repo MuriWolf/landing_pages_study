@@ -47,7 +47,7 @@ body {
 .rating-container .thank-you-img {
     height: 140px;
     width: 180px; 
-    margin: 0 auto 20px auto;
+    margin: 10px auto 30px auto;
 }
 
 .stars {
@@ -68,6 +68,7 @@ body {
     border-radius: 50%;
 
     background-color: #303844;
+    transition: all 0.2s;
 }
 
 .star:hover {
@@ -96,6 +97,7 @@ body {
     cursor: pointer ;
     color: white;
     background-color: #fc7613;
+    transition: all 0.3s;
 }
 
 .rating-container button[type="submit"]:hover {
@@ -104,13 +106,15 @@ body {
 }
 
 .highlight-text {
-    
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 32px;
 }
 
 .highlight-text p {
-    background-color: #303844;
-    border-radius: 25px;
+    display: inline;
     color: #fc7613;
-    display: inline-block;
-    width: 100%
+    background-color: #303844;
+    padding: 10px 26px;
+    border-radius: 25px;
 } 
