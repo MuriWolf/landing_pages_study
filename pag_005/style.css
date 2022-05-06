@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(219, 219, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.emailbox {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.emailbox-text {
+    height: 180px;
+    background-color: rgb(75, 54, 50);
+    color: white;
+    padding: 10px;
+}
+
+.emailbox-text > h1 {
+    font-size: 225%;
+}
+
+.emailbox-text > h1, p {
+    margin-left: 20px;
+}
+
+.emailbox-input {
+    height: 200px;
+    background-color: white;
+}
+
+.digite-email {
+    padding-top: 35px;
+}
+
+.digite-email > input {
+    display: block;
+    height: 45px;
+    width: 90%;
+    margin: auto;
+    font-size: 150%;
+    text-indent: 10px;
+}
+
+.emailbox-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.button-cancelar, .button-confirmar {
+    width: 200px;
+    height: 45px;
+    margin: 20px;
+    margin-top: 25px;
+    font-size: 115%;
+}
+
+.button-confirmar {
+    background-color: rgb(75, 54, 50);
+    border: none;
+    color: white;
+}
+
+.button-confirmar:hover {
+    background-color: rgb(51, 37, 35);
+}
+
+.button-cancelar {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(75, 54, 50);
+    background-color: white;
+}
+
+.button-cancelar:hover {
+    border-width: 2px;
+    background-color: rgb(240, 235, 234);
+}
