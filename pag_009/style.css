@@ -2,8 +2,10 @@
 
 body {
     font-family: 'Outfit', sans-serif;
+    font-size: 18px;
 
     background-color: #0d1a2d;
+    display: flex;
 }
 
 .nft-cointainer {
@@ -11,10 +13,10 @@ body {
     background-color: #102844;
     padding: 20px;
     border-radius: 15px;
-    
-    margin: auto;
-    margin-top: 5%;
+    margin: 25px;
 }
+
+/* NFT IMAGE */
 
 .imagens {
     max-height: 350px;
@@ -37,17 +39,15 @@ body {
     transform: translate(0, -275%);
 }
 
-.nft-cointainer img:hover {
-    filter: opacity(0.5);
-}
-
-.nft-cointainer img:hover ~ .eye-svg {
+.imagens:hover .eye-svg{
     opacity: 1;
 }
 
-.nft-cointainer p {
-    color: #637895;
+.imagens:hover .nft-image{
+    filter: opacity(0.5);
 }
+
+/* TITLE AND DESCRIPTION */
 
 .nft-cointainer h2 {
     color: white;
@@ -57,14 +57,30 @@ body {
     color: #00fff6;
 }
 
+.text-container-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nft-cointainer p {
+    color: #637895;
+    margin-left: 6px;
+}
+
+/* VALUE AND TIME */
+
 .value-container {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .hightlight-blue {
     color: #00fff6;
 }
+
+/* AUTHOR PROFILE  */
 
 .profile-container {
     display: flex;
