@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Roboto&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+
+    background-color: #0d1a2d;
+}
+
+.nft-cointainer {
+    width: 350px;
+    background-color: #102844;
+    padding: 20px;
+    border-radius: 15px;
+    
+    margin: auto;
+    margin-top: 5%;
+}
+
+.imagens {
+    max-height: 350px;
+    border-radius: 15px;
+    background-color: #00fff6;
+}
+
+.nft-image {
+    width: 100%;
+    border-radius: 15px;
+    background: #00fff6;
+}
+
+.eye-svg {
+    display: block;
+    margin: auto;
+    opacity: 0;
+    height: 80px;
+    width: 80px;
+    transform: translate(0, -275%);
+}
+
+.nft-cointainer img:hover {
+    filter: opacity(0.5);
+}
+
+.nft-cointainer img:hover ~ .eye-svg {
+    opacity: 1;
+}
+
+.nft-cointainer p {
+    color: #637895;
+}
+
+.nft-cointainer h2 {
+    color: white;
+}
+
+.nft-cointainer h2:hover {
+    color: #00fff6;
+}
+
+.value-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hightlight-blue {
+    color: #00fff6;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #637895;
+    margin-top: 6px;
+    padding-top: 4px;
+}
+
+.profile-container img {
+    height: 35px;
+    width: 35px;
+}
+
+.profile-container p {
+    padding-left: 10px;
+}
+
+.author:hover {
+    color: #00fff6;
+}
