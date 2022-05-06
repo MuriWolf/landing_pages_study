@@ -152,9 +152,7 @@ p.saiba_mais > a:hover {
     height: 35px;
     width: 90%;
     margin: 16px 32px;
-
 }
-
 
 .sidebar-input > input {
     display: inline;
@@ -246,7 +244,7 @@ footer > a:hover {
     border-radius: 3px;
     padding: 8px;
     background-color: rgba(61, 97, 255, 0.75);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);;
 }
 
 .voltar-comeco-da-pagina:hover {
@@ -273,7 +271,6 @@ footer > a:hover {
     line-height: 35px;
     transition: all .4s;
 }
-
 
 #botao-sidebar {
     display: none;
@@ -392,7 +389,7 @@ footer > a:hover {
         margin: auto;
     }
 
-        /* FOOTER */
+    /* FOOTER */
 
     footer {
         display: block;
@@ -402,9 +399,6 @@ footer > a:hover {
     footer > * {
         margin: 15px;
     }
-
-
-
 }
 
 @media only screen and (max-width: 570px) {

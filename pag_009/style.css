@@ -13,19 +13,20 @@ body {
     background-color: #102844;
     padding: 20px;
     border-radius: 15px;
-    margin: 25px;
 }
 
 /* NFT IMAGE */
 
 .imagens {
+    min-height: 350px;
     max-height: 350px;
     border-radius: 15px;
     background-color: #00fff6;
 }
 
 .nft-image {
-    width: 100%;
+    min-height: 350px;
+    max-height: 350px;
     border-radius: 15px;
     background: #00fff6;
 }
