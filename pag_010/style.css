@@ -1,28 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: url("images/bg-intro-desktop.png");
-    background-color: rgb(253, 141, 160);
+    background-color: #ff7978;
+    font-size: 16px;
 }
 
 .signup-container {
     display: flex;
-    width: 1000px;
-    height: 750px;
+    width: 1100px;
+    height: 650px;
     margin: auto;
+
+    margin-top: 100px;
 
 } 
 
 .description-container {
     display: flex;
     flex: 1;
-    flex-direction: column;
-    /* align-items: center; */
+    flex-wrap: wrap;
     align-content: center;
     color: white;
-    background-color: #ffc0cb;
 }
 
-.input-main-container {
-    flex: 1;
-    background-color: white;
+.description-container h1 {
+    font-size: 3em;
+    line-height: 1.2;
 }
+
+
+.input-main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-main-container p {
+    font-size: 14px;
+}
+
+.tryfree-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100px;
+    background-color: #5d54a3;
+    color: #cbc4f7;
+    border-radius: 8px;
+    box-shadow: 0px 8px 0px #c96060b9;
+}
+
+.tryfree-container span {
+    font-weight: 600;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 8;
+    background-color: white;
+    margin-top: 35px;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0px 8px 0px #c96060b9;
+}
+
+.input-container form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+} 
+
+.input-container form * {
+    flex: 1;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(149, 149, 149);
+}
+
+.input-container form input{
+    font-weight: 700;
+    font-size: 1.15em;
+    text-indent: 24px;
+}
+
+.input-container form button {
+    background-color: #37cc8a;
+    margin-bottom: 0px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    box-shadow: -1px 2px 1px #32b97c;
+    cursor: pointer;
+}
+
