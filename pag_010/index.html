@@ -18,21 +18,40 @@
 				problems in real-time. Watching scripted tutorials is great, but
 				understanding how developers think is invaluable.</p>
 		</div>
-		<div class="input-main-container">
+		<div class="inputs-main-container">
 			<div class="tryfree-container">
 				<p><span>Try it free 7 days</span> then$20/mo. thereafter</p>
 			</div>
-			<div class="input-container">
+			<div class="inputs-container">
 				<form action="">
-					<input type="text" name="" id="" placeholder=" First Name">
-					<input type="text" name="" id="" placeholder="Last Name">
-					<input type="email" name="" id="" placeholder="Email Address">
-					<input type="password" name="" id="" placeholder="Password">
-					<button type="submit">Claim your free trial</button>
+					<div class="input-container">
+						<label for="first-name" id="first-name-label" >
+							<input type="text" name="First Name" id="first-name" placeholder=" First Name" >
+						</label>
+						<!-- <p>sadas asd adas sa</p> -->
+					</div>
+					<div class="input-container">
+						<label for="last-name" id="last-name-label">
+							<input type="text" name="Last Name" id="last-name" placeholder="Last Name">
+						</label>
+					</div>
+					<div class="input-container">
+						<label for="email" class="email-label">
+							<input type="email" name="email" id="email" placeholder="Email Address">
+						</label>
+					</div>
+					<div class="input-container">
+						<label for="password" class="password-label">
+							<input type="password" name="Password" id="password" placeholder="Password">
+						</label>
+					</div>
+					<button type="button">Claim your free trial</button>
 				</form>
 				<p>clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
 			</div>
 		</div>
 	</div>
+
+	<script src="script.js"></script>
   </body>
 </html>

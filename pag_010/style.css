@@ -7,21 +7,26 @@ body {
     font-size: 16px;
 }
 
+/* main container */
+
 .signup-container {
     display: flex;
-    width: 1100px;
-    height: 650px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 650px;
+    
     margin: auto;
-
     margin-top: 100px;
-
 } 
+
+/* description container  */
 
 .description-container {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     align-content: center;
+    justify-content:center;
     color: white;
 }
 
@@ -30,27 +35,32 @@ body {
     line-height: 1.2;
 }
 
+/* input main container */
 
-.input-main-container {
+.inputs-main-container {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.input-main-container p {
+.inputs-main-container p {
     font-size: 14px;
 }
 
+/* tryfree container */
+
 .tryfree-container {
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    flex: 1;
+
     height: 100px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 0px #c960609c;
+
     background-color: #5d54a3;
     color: #cbc4f7;
-    border-radius: 8px;
-    box-shadow: 0px 8px 0px #c96060b9;
 }
 
 .tryfree-container span {
@@ -58,46 +68,112 @@ body {
     color: white;
 }
 
-.input-container {
+/* inputs container */
+
+.inputs-container {
     display: flex;
+    flex: 8;
     flex-direction: column;
     align-items: center;
-    flex: 8;
-    background-color: white;
-    margin-top: 35px;
-    border-radius: 8px;
+
     padding: 35px;
+    border-radius: 8px;
     box-shadow: 0px 8px 0px #c96060b9;
+    margin-top: 35px;
+
+    background-color: white;
 }
 
-.input-container form {
+.input-container > p {
+    text-align: right;
+    margin: 0px;
+}
+
+.inputs-container form {
     display: flex;
     flex: 1;
     flex-direction: column;
     width: 100%;
 } 
 
-.input-container form * {
+.inputs-container form > * {
     flex: 1;
     margin-bottom: 30px;
     border-radius: 8px;
-    border: 1px solid rgb(149, 149, 149);
 }
 
-.input-container form input{
+.inputs-container label {
+    display: flex;
+    align-items: center;
+    min-height: 51px;
+    border-radius: 8px;
+    border: 2px solid rgb(223, 223, 223);
+}
+
+.inputs-container form input{
+    width: 90%;
+    min-height: 51px;
+    border-radius: 8px;
+    border: none;
+    
     font-weight: 700;
-    font-size: 1.15em;
+    font-size: 1.25em;
     text-indent: 24px;
+    color: black;
+    background-color: white ;
 }
 
-.input-container form button {
+.inputs-container form input:focus  {
+    outline: 0;
+    outline-color: #5d54a3;
+}
+
+.inputs-container form button {
     background-color: #37cc8a;
     margin-bottom: 0px;
     font-weight: bold;
     border: none;
     color: white;
     font-size: 1.25em;
-    box-shadow: -1px 2px 1px #32b97c;
+    box-shadow: 0px 4px 1px #54a07f;
     cursor: pointer;
+    min-height: 60px;
 }
 
+.inputs-container form button:hover {
+    background-color: #37cc89b2;
+}
+
+.inputs-container * {
+    color: rgb(179, 179, 179);
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.inputs-container a {
+    text-decoration: none;
+    color: rgb(168, 0, 0);
+}
+
+.inputs-container .error {
+    border: 2px solid #ff7978; 
+}
+
+.inputs-container .error input::placeholder {
+    color: #ff7978;
+}
+
+@media only screen and (max-width: 1040px) {
+    .signup-container {
+        max-width: 400px;
+    } 
+
+    .description-container {
+        flex: 1 1 400px;
+        text-align: center;
+    }
+
+    .inputs-main-container {
+        flex: 1 1 400px;
+    }
+}
