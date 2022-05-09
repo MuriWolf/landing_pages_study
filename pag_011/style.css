@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: pink;
+}
+
+.main-container {
+    display: flex;
+    width: 1000px;
+    height: 550px;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.image-container {
+    flex: 1 1 500px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.image-container img {  
+    position: relative;
+    /* height: 200%; */
+    right: 550px;
+    bottom: 275px;
+}
+
+.questions-container {
+    flex: 1 0 500px;
+    padding: 100px;
+}
