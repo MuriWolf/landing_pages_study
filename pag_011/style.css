@@ -12,7 +12,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.hidden {
+.question-container .hidden {
     display: none;
 }
 
@@ -28,21 +28,22 @@ body {
 
 .main-container {
     display: flex;
+
     position: relative;
-    width: 1000px;
-    height: 525px;
+    max-width: 1100px;
+    height: 625px;
     margin: auto;
+    margin: 10px;
     background-color: white;
     z-index: 1;
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 /* images */
 
 .image-container {
-    flex: 1 1 500px;
-    max-width: 500px;
+    flex: 1 1 100px;
     overflow: hidden;
 }
 
@@ -51,19 +52,21 @@ body {
 }
 
 .bg-pattern {  
-    right: 550px;
-    bottom: 275px;
+    bottom: 259px;
+    right: 600px;
+    height: 165%;
 }
 
 .illustration-woman {
-    bottom: 850px;
-    right: 75px;
+    bottom: 950px;
+    right: 150px;
+    height: 75%;
 }
 
 .image-container > .illustration-box {
     position: absolute;
     right: 90.5%;
-    top: 41%;
+    top: 46%;
 }
 
 /* questions */
@@ -71,13 +74,14 @@ body {
 .questions-container {
     display: flex;
     flex-direction: column;
-    flex: 1 0 500px;
-    padding: 60px;
-    padding-right: 100px;
+    flex: 1 ;
+    padding: 100px;
+    padding-left: 40px;
 }
 
 .questions-container h1 {
     margin-bottom: 25px;
+    font-size: 2.5em;
 }
 
 .question-container {
@@ -100,14 +104,13 @@ body {
     color: #e8a59d;
 }
 
-.question-container p {
-    font-size: 0.95em;
+.question-container > p {
+    font-size: 1.2em;
     margin-top: 12px;
     margin-bottom: 12px;
+    color: rgb(44, 44, 44);
 }
 
-
-.answer {
+.question-container .answer {
     color: rgb(129, 129, 129);
-    transition: all 1s;
 }
