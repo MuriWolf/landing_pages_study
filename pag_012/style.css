@@ -21,9 +21,43 @@ body {
 }
 
 #advice {
-    margin: auto;
-    height: 400px;
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    background-color: rgb(102, 102, 112);
+    margin: auto;
+    height: 380px;
+    width: 650px;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+
+    background-color: #3a4355;
 }
+
+#advice p {
+    font-size: 1.2em;
+    color: var(--hightlight-text-color);
+    margin-bottom: 35px;
+}
+
+#advice h2 {
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+.pattern-divider {
+    margin-bottom: 35px;
+}
+
+#advice button {
+    display: block;
+    top: 345px;
+    position: absolute;
+    margin: auto;
+    background-color: #52fea8;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
