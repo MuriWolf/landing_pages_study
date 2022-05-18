@@ -24,19 +24,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     margin: auto;
+    margin-top: 30vh;
     height: 380px;
-    width: 650px;
-    padding: 35px;
+    width: 630px;
+    padding: 45px;
     border-radius: 20px;
     text-align: center;
 
-    background-color: #3a4355;
+    background-color: #313a49;
 }
 
-#advice p {
+#advice .advice-id {
     font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 4px;
+    word-spacing: 2px;
     color: var(--hightlight-text-color);
     margin-bottom: 35px;
 }
@@ -52,12 +57,17 @@ body {
 
 #advice button {
     display: block;
-    top: 345px;
     position: absolute;
+    top: 340px;
     margin: auto;
     background-color: #52fea8;
-    width: 75px;
-    height: 75px;
+    min-width: 75px;
+    min-height: 75px;
     border-radius: 50%;
+
+    transition: all 0.25s;
 }
 
+#advice button:hover {
+    box-shadow: 0px 0px 20px #52fea8;
+}
