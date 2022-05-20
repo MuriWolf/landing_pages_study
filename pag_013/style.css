@@ -11,10 +11,12 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+/* header */
+
 header {
     display: flex;
     align-items: center;
-    padding:32px;
+    padding: 32px 64px;
 }
 
 header a {
@@ -63,7 +65,7 @@ nav > * {
 }
 
 .dropdown-content--feature {
-    left: 90px;
+    left: 120px;
 }
 .hidden {
     display: none;
@@ -84,33 +86,43 @@ nav > * {
     transition: all 0.5s;
 }
 
+/* main content */
+
 .main-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    height: 800px;
+    width: 70%;
+    height: 725px;
     margin: auto;
+    margin-top: 50px;
 }
 
+/* main content text */
 
 .main-container-text {
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+.main-container-text-main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+
+    flex: 10;
 }
 
-.main-container-text > * {
+.main-container-text-main > * {
     margin-bottom: 60px;
-
 }
 
-.main-container-text h1{
+.main-container-text-main h1{
     font-size: 5.5em;
+    max-width: 580px;
 }
 
-.main-container-text > p {
+.main-container-text-main > p {
     max-width: 500px;
     font-size: 1.3em;
     color: #6e6e6e;
@@ -123,8 +135,11 @@ nav > * {
     background-color: white;
     border-radius: 12px;
     padding: 16px;
-    border: 3px solid black;
+    border: 2px solid black;
+    cursor: pointer;
 }
+
+/* main content image */
 
 .main-container-image {
     display: flex;
@@ -133,6 +148,37 @@ nav > * {
 }
 
 .main-container-image img {
-    width: 80%;
+    min-width: 425px;
+    width: 85%;
     height: 100%;
+}
+
+.clients-container {
+    max-width: 80%;
+    justify-content: space-between;
+}
+
+
+.clients-container > img {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width:1220px) {
+    .main-container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        height: 625px;
+        margin-bottom: 25px;
+
+    }
+
+    .clients-container {
+        max-width:100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    
 }
