@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    padding: 32px 64px;
+    padding: 32px;
 }
 
 header a {
@@ -163,7 +163,7 @@ nav > * {
     margin-left: 20px;
 }
 
-@media only screen and (max-width:1220px) {
+@media only screen and (max-width:1320px) {
     .main-container {
         width: 100%;
         padding-left: 20px;
@@ -179,6 +179,63 @@ nav > * {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 850px) {
+    .header-links-content {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 0;
+    }
     
+    .main-container-image {
+        flex: 1;
+        max-height: 400px;
+        margin-bottom: 40px ;
+    }
+    
+    .main-container-image img {
+        src: url("images/image-hero-mobile.png");
+        width: 100%;
+        max-width: 520px;
+        height: 100%;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .main-container-text-main {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .main-container-text-main h1, p, img, button{
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .main-container-text-main h1 {
+        font-size: 2.5em;
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .main-container-text-main p {
+        margin-bottom: 24px;
+    }
+
+    .main-container-text-main .clients-container{
+        max-width: 100%;
+    }
+    
+    .main-container-text .clients-container {
+        margin: auto;
+    }
+    
+
+    .main-container-text {
+        order: 2;
+    }
 }
