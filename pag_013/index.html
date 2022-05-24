@@ -14,10 +14,14 @@
 
   <header>
 	  <h1>Snap</h1>
+	  <div class="menu-mobile-btn">
+		<img src="images/icon-menu.svg" alt="">
+	</div>
 	  <div class="header-links-content">
-		<nav>
-			<div class="dropdown">
-				<a>Feature </a>
+		  <div class="closemenu-btn"><img src="images/icon-close-menu.svg" alt=""></div>
+		<ul class="navigation-list">
+			<li class="dropdown">
+				<a>Features</a>
 				<img class="arrow-icon" src="images/icon-arrow-up.svg" alt="">
 				<ul class="dropdown-content dropdown-content--feature hidden">
 					<li><img src="images/icon-planning.svg" alt=""><a href="">To do List</a></li>
@@ -25,24 +29,26 @@
 					<li><img src="images/icon-reminders.svg" alt=""><a href="">Reminders</a></li>
 					<li><img src="images/icon-planning.svg" alt=""><a href="">Planning</a></li>
 				</ul>
-			</div>
-			<div class="dropdown">
+			</li>
+			<li class="dropdown">
 				<a>Company</a>
 				<img class="arrow-icon" src="images/icon-arrow-up.svg" alt="">
-				<div class="dropdown-content hidden">
+				<ul class="dropdown-content hidden">
 					<li><a href="">History</a></li>
 					<li><a href="">Our Team</a></li>
 					<li><a href="">Blog</a></li>
-				</div>
-			</div>
-				<a href="">Careers</a>
-				<a href="">About</a>
-			</nav>
+				</ul>
+			</li>
+				<li><a href="">Careers</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+
 			<div class="enter-account-container">
 				<a class="login-btn" href="">Login</a>
 				<a class="register-btn" href="">Register</a>
 			</div>
 		</div>
+
   </header>
   <main>
 	  <div class="main-container">
@@ -61,7 +67,8 @@
 			</div>
 		  </div>
 		  <div class="main-container-image">
-			<img src="images/image-hero-desktop.png" alt="">
+			<img class="hero-desktop" src="images/image-hero-desktop.png" alt="">
+			<img class="hero-mobile" src="images/image-hero-mobile.png" alt="">
 		  </div>
 	  </div>
   </main>
@@ -81,3 +88,27 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!-- <nav>
+	<div class="dropdown">
+		<a>Feature </a>
+		<img class="arrow-icon" src="images/icon-arrow-up.svg" alt="">
+		<ul class="dropdown-content dropdown-content--feature hidden">
+			<li><img src="images/icon-planning.svg" alt=""><a href="">To do List</a></li>
+			<li><img src="images/icon-calendar.svg" alt=""><a href="">Calendar</a></li>
+			<li><img src="images/icon-reminders.svg" alt=""><a href="">Reminders</a></li>
+			<li><img src="images/icon-planning.svg" alt=""><a href="">Planning</a></li>
+		</ul>
+	</div>
+	<div class="dropdown">
+		<a>Company</a>
+		<img class="arrow-icon" src="images/icon-arrow-up.svg" alt="">
+		<div class="dropdown-content hidden">
+			<li><a href="">History</a></li>
+			<li><a href="">Our Team</a></li>
+			<li><a href="">Blog</a></li>
+		</div>
+	</div>
+		<a href="">Careers</a>
+		<a href="">About</a>
+	</nav> -->

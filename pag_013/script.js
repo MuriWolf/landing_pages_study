@@ -1,4 +1,9 @@
 const dropdowns = document.querySelectorAll(".dropdown")
+const menuMobileBtn = document.querySelector(".menu-mobile-btn")
+const closeMenuBtn = document.querySelector(".closemenu-btn")
+const mobileMenu = document.querySelector(".header-links-content")
+const body = document.querySelector("body")
+
 
 dropdowns.forEach(dropdown => {
     dropdown.addEventListener("click", ()=> {
@@ -14,4 +19,12 @@ dropdowns.forEach(dropdown => {
         }
 
     })  
+})
+
+menuMobileBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("show-sidebar")
+})
+
+closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("show-sidebar")
 })
