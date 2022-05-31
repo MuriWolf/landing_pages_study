@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body p, a, div, section, section, img, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #edf2f8;
+}
+
+.reviews-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.review-container {
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.review-container .profile-virified, .review-text {
+    color: black;
+}
+
+.reviews-container .item1 {
+    grid-column: span 2;
+    background-color: #733fc8;
+}
+
+.reviews-container .item2 {
+    background-color: #49556b;
+}
+
+.reviews-container .item3 {
+    background-color: white;
+}
+
+.reviews-container .item4 {
+    grid-column: span 2;
+    background-color: #18202d;
+
+}
+
+.reviews-container .item5 {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    background-color: white;
+}
+
