@@ -36,8 +36,22 @@ body {
 }
 
 .reviews-container .item1 {
+    position: relative;
     grid-column: span 2;
     background-color: #733fc8;
+}
+
+.reviews-container .item1 .bg-pattern {
+    position: absolute;
+    right: 100px;
+    top: 0px;
+
+    width: 20.5%;
+}
+
+.reviews-container .item1 article {
+    position: absolute;
+    margin-right: 20px;
 }
 
 .reviews-container .item2 {
@@ -84,7 +98,7 @@ body {
 .review-container .profile-info .profile-virified,
 .review-container article .review-text {
     font-size: 0.9em;
-    color: #00000080;
+    color: #000000b0;
 }
 
 .reviews-container .review-container .profile-name {
@@ -93,7 +107,7 @@ body {
 }
 
  .review-container .review-title {
-    font-size: 1.25em;
+    font-size: 1.4em;
     margin-bottom: 20px;
     color: #373742;
 }
@@ -107,24 +121,3 @@ body {
 .dark-background  article .review-text { 
     color: #ffffff80;
 }
-
-
-/* reviews-container > .review-container > .profile-info texto*/
-
-
-/* reviews-container > .review-container > article texto */
-
-
-
-/* .section-1 .author-info,
-.section-2 .author-info,
-.section-5 .author-info {
-    color: var(--white);
-    font-weight: 500;
-}
-
-.section-3 .author-info,
-.section-4 .author-info .section-3 .highlight-content,
-.section-4 .highlight-content {
-    color: var(--dark-grayish-blue);
-} */
