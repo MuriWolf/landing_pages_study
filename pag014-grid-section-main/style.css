@@ -20,10 +20,42 @@ body {
     max-width: 1200px;
     max-height: 696px;
     margin: 0 auto;
+    margin-bottom: 150px;
     display: grid;
     gap: 30px;
     padding: 30px;
     grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: 
+    "item1 item1 item2 item5"
+    "item3 item4 item4 item5"
+    ;
+}
+
+
+@media (max-width: 900px) {
+    .reviews-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "item1 item1 item2"
+        "item5 item5 item5"
+        "item3 item4 item4"
+        ;
+    }
+}
+
+@media (max-width: 650px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        ;
+    }
+
 }
 
 .review-container {
@@ -37,40 +69,47 @@ body {
 
 .reviews-container .item1 {
     position: relative;
-    grid-column: span 2;
+    /* grid-column: span 2; */
     background-color: #733fc8;
+    grid-area: item1;
 }
 
 .reviews-container .item1 .bg-pattern {
     position: absolute;
-    right: 100px;
+    right: 10%;
     top: 0px;
 
-    width: 20.5%;
+    min-width: 20.5%;
+
 }
 
 .reviews-container .item1 article {
-    position: absolute;
+    position: relative;
+    z-index: 2;
     margin-right: 20px;
 }
 
 .reviews-container .item2 {
     background-color: #49556b;
+    grid-area: item2;
 }
 
 .reviews-container .item3 {
     background-color: white;
+    grid-area: item3;
 }
 
 .reviews-container .item4 {
-    grid-column: span 2;
+    /* grid-column: span 2; */
     background-color: #18202d;
+    grid-area: item4;
 }
 
 .reviews-container .item5 {
-    grid-column: 4;
-    grid-row: 1 / 3;
+    /* grid-column: 4;
+    grid-row: 1 / 3; */
     background-color: white;
+    grid-area: item5    ;
 }
 
 .review-container {
