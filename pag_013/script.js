@@ -18,6 +18,7 @@ dropdowns.forEach(dropdown => {
             arrow.style.transform = "rotate(0deg)"
         }
 
+
     }) 
 })
 

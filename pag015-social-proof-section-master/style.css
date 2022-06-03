@@ -71,7 +71,7 @@ body {
     margin-top: 20px;
     padding: 4px 40px;
     max-width: 375px;
-    max-height: 55px;
+    min-height: 55px;
     background-color: #f7f2f8;
     border-radius: 8px;
 }
@@ -94,7 +94,6 @@ body {
 .description-container-rate-container > div:nth-child(1) {
     margin-right: 14%;
 }
-
 .description-container-rate-container > div:nth-child(2) {
     margin-right: 4%;
 }
@@ -147,6 +146,7 @@ body {
 }
 .opnion-container > p {
     line-height: 1.35em;
+    margin-top: 12px;
 }
 
 .perfil-info-verified {
@@ -159,8 +159,13 @@ body {
         flex-direction: column;
         align-content: center;
         align-items: center;
-
     }
+
+    .description-container-title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
 
     .description-container-rate-container {
         flex-direction: row;
@@ -186,6 +191,7 @@ body {
 
     .description-container-rate-container > div > .estrelas {
         margin: 0px;
+        margin-bottom: 10px;
     }
 
     .opnions-container {
