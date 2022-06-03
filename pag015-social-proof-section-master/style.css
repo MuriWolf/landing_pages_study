@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+body p, img, section, h3, h1, div {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* main container */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 1125px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* description container */
+
+.description-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* description container title */
+
+.description-container-title {
+    flex: 1;
+    max-width: 350px;
+}
+
+.description-container-title > h1 {
+    margin: 0;
+    font-size: 3.425em;
+    color: #511f50;
+}
+
+.description-container-title > p {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 1.15em;
+    color: #511f50b4;
+    font-weight: 500;
+    line-height: 1.35em
+}
+
+/* description container rate */
+
+.description-container-rate-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.description-container-rate-container > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-top: 20px;
+    padding: 4px 40px;
+    max-width: 375px;
+    max-height: 55px;
+    background-color: #f7f2f8;
+    border-radius: 8px;
+}
+
+.description-container-rate-container > div > p {
+    color: #511f50;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.description-container-rate-container > div > .estrelas {
+    margin-right: 25px;
+    min-width: 125px;
+}
+
+.description-container-rate-container > div > .estrelas img {
+    margin: 0 2px;
+}
+
+.description-container-rate-container > div:nth-child(1) {
+    margin-right: 14%;
+}
+
+.description-container-rate-container > div:nth-child(2) {
+    margin-right: 4%;
+}
+
+/* opnions container */
+
+.opnions-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.opnion-container {
+    background-color: #511f50;
+    height: 150px;
+    max-width: 270px;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.opnion-container:nth-child(1) {
+    align-self: flex-start;
+}
+.opnion-container:nth-child(3) {
+    align-self: flex-end;
+}
+
+.perfil-info {
+    display: flex;
+    height: 40px;
+}
+
+.perfil-info img {
+    max-height: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+    align-self: baseline;
+}
+
+.perfil-info-name,
+.opnion-container > p {
+    color: rgba(255, 255, 255, 0.959);
+}
+.opnion-container > p {
+    line-height: 1.35em;
+}
+
+.perfil-info-verified {
+    color: #d86199;
+    margin-top: 6px;
+}
+
+@media (max-width: 980px) {
+    .description-container {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .description-container-rate-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .description-container-rate-container > div {
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .description-container-rate-container > div:nth-child(1),
+    .description-container-rate-container > div:nth-child(2),
+    .description-container-rate-container > div:nth-child(3)
+    {
+        margin-right: 10px;
+    }
+
+    .description-container-rate-container > div  {
+        justify-content: center;
+    }
+
+    .description-container-rate-container > div > .estrelas {
+        margin: 0px;
+    }
+
+    .opnions-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
