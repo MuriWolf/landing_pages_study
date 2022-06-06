@@ -1,6 +1,7 @@
 @import url(../variable.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap');
 
 .c-preview-card {
     display: flex;
@@ -11,8 +12,15 @@
     background-color: var(--preview-card--bgc);
 }
 
+.c-preview-card:first-child {
+    border-radius: 10px 0 0 10px;
+}
+.c-preview-card:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
 .c-preview-card--sedans {
-    --preview-card--bgc: #e28525;
+    --preview-card--bgc: #e28325;
 }
 .c-preview-card--suvs {
     --preview-card--bgc: #016972;
@@ -21,7 +29,7 @@
     --preview-card--bgc: #00403f;
 }
 
-.c-preview-card__content > .c-preview-card__img, .c-preview-card__title {
+.c-preview-card__content > .c-preview-card__img, .c-preview-card__title, .c-preview-card__text {
     margin-bottom: 25px;
 }
 
@@ -41,10 +49,30 @@
     width: 140px;
     padding: 22px 0px;
     border-radius: 30px;
+
     color: var(--preview-card--bgc);
     background-color: var(--Very-light-gray);
+    
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Lexend Deca', sans-serif;    
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.c-preview-card__button:hover {
+    background-color: transparent;
+    border: 2px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+
+@media (max-width: 720px) {
+    .c-preview-card:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+    .c-preview-card:last-child {
+        border-radius: 0 0 10px 10px;
+    }
 }

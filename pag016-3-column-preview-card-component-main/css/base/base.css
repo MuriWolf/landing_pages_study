@@ -14,8 +14,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-
-    font-size: 15px;
+    font-size: 0.95em;
     font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
 }
 
+@media (max-width: 720px) {
+    body {
+        min-height: 0;
+    }
+}
