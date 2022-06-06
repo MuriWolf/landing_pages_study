@@ -1,0 +1,50 @@
+@import url(../variable.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&display=swap');
+
+.c-preview-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 48px;
+    background-color: var(--preview-card--bgc);
+}
+
+.c-preview-card--sedans {
+    --preview-card--bgc: #e28525;
+}
+.c-preview-card--suvs {
+    --preview-card--bgc: #016972;
+}
+.c-preview-card--luxury {
+    --preview-card--bgc: #00403f;
+}
+
+.c-preview-card__content > .c-preview-card__img, .c-preview-card__title {
+    margin-bottom: 25px;
+}
+
+.c-preview-card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    color: var(--Very-light-gray);
+}
+
+.c-preview-card__text {
+    line-height: 1.5;
+    color: var(--main-paragraphs-color);
+}
+
+.c-preview-card__button {
+    height: 20px;
+    width: 140px;
+    padding: 22px 0px;
+    border-radius: 30px;
+    color: var(--preview-card--bgc);
+    background-color: var(--Very-light-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

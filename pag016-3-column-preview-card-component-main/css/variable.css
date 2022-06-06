@@ -1,0 +1,5 @@
+:root {
+    --Very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+    --main-paragraphs-color: hsla(0, 0%, 100%, 0.75); 
+    --preview-card--bgc: #a8a8a8;
+}
