@@ -12,6 +12,7 @@
     background-color: var(--preview-card--bgc);
 }
 
+/* Border on the first and last cards */
 .c-preview-card:first-child {
     border-radius: 10px 0 0 10px;
 }
@@ -19,6 +20,7 @@
     border-radius: 0 10px 10px 0;
 }
 
+/* Different colors of each card */
 .c-preview-card--sedans {
     --preview-card--bgc: #e28325;
 }
@@ -29,6 +31,7 @@
     --preview-card--bgc: #00403f;
 }
 
+/* Inside the card */
 .c-preview-card__content > .c-preview-card__img, .c-preview-card__title, .c-preview-card__text {
     margin-bottom: 25px;
 }
