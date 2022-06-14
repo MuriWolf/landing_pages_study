@@ -1,0 +1,29 @@
+.c-card {
+    background-color: var(--Dark-blue);
+    border-radius:3rem;
+    min-height: 300px;
+    box-sizing: border-box;
+    position: relative;
+    /* display: flex; */
+    align-items: flex-end;
+}
+
+.c-card--person {
+    grid-row: span 2;
+}
+
+.c-card--work {
+    background-color: yellow;
+}
+
+.c-card__banner {
+    position: absolute;
+}
+
+.c-card__content {
+    background-color: var(--Dark-blue);
+    border-radius:3rem;
+    height: 76%;
+    background-color: red;
+    
+}

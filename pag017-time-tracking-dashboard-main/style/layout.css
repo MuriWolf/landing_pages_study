@@ -1,0 +1,16 @@
+.l-cards {
+    max-width: 1300px;
+    min-width: 350px;
+    height: 450px;
+
+    margin-top: 10%;
+    margin: 0 auto;
+    /* border-radius: 1.25rem; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.6rem;
+}
+
+/* grid-template-columns: repeat(auto-fill, minmax(100px, auto)); */
+
