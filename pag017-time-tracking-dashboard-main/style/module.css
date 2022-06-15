@@ -1,29 +1,74 @@
 .c-card {
     background-color: var(--Dark-blue);
-    border-radius:3rem;
-    min-height: 300px;
+    border-radius:2.5rem;
+    min-height: 200px;
     box-sizing: border-box;
     position: relative;
-    /* display: flex; */
-    align-items: flex-end;
-}
-
-.c-card--person {
-    grid-row: span 2;
-}
-
-.c-card--work {
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
 }
 
 .c-card__banner {
     position: absolute;
+    right: 2rem;
+    top: -6px;
 }
 
 .c-card__content {
+    box-sizing: border-box;
     background-color: var(--Dark-blue);
-    border-radius:3rem;
-    height: 76%;
-    background-color: red;
-    
+    border-radius:2.5rem;
+    height: 85%;
+    z-index: 1;
+    padding: 3rem;
+}
+
+.c-card__person {
+    grid-row: span 2;
+}
+.c-card--work { background-color: var(--Light-orange) }
+.c-card--study { background-color: var(--Light-red) }
+.c-card--social { background-color: var(--Violet); }
+.c-card--self-care { background-color: var(--Soft-orange); }
+.c-card--play { background-color: var(--Soft-blue);}
+.c-card--exercise { background-color: var(--Lime-green); }
+
+.c-card__person__profile {
+    background-color: var(--Blue);
+    height: 65%;
+    border-radius:2.5rem;
+    padding: 3rem;
+}
+
+.c-card__person__profile__img {
+    border-radius: 50%;
+    max-width: 8rem;
+    margin-bottom: 5rem;
+    border: 4px solid #ffffff;
+}
+
+.c-card__person__profile__name {
+    font-size: 4rem;
+    color: white;
+    font-weight: 300;
+}
+
+.c-card--person__times {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35%;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.c-card--person__times p {
+    font-size: 1.75rem;
+    padding: 0.5rem;
+}
+
+.c-card--person__times p:hover {
+    color: #ffffffa4;
 }

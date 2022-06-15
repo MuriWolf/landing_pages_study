@@ -17,3 +17,8 @@ body {
     background-color: var(--Very-dark-blue);
     margin: 4rem;
 }
+
+p {
+    font-size: 1.6rem;
+    color: #ffffff49;
+}
