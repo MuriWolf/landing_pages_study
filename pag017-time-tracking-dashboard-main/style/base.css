@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    font-weight: 400;
 }
 
 body {
@@ -19,6 +20,18 @@ body {
 }
 
 p {
-    font-size: 1.6rem;
-    color: #ffffff49;
+    font-size: 1.8rem;
+    color: #ffffff96;
+}
+
+@media (max-width: 1117px) {
+    html {
+        font-size: 58.5%;
+    }
+}
+
+@media (max-width: 586px) {
+    html {
+        font-size: 53.5%;
+    }
 }

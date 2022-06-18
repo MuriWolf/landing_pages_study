@@ -1,7 +1,7 @@
-.c-card {
+.card {
     background-color: var(--Dark-blue);
-    border-radius:2.5rem;
-    min-height: 200px;
+    border-radius: 3rem;
+    min-height: 180px;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -10,52 +10,92 @@
     overflow: hidden;
 }
 
-.c-card__banner {
+.card__banner {
     position: absolute;
     right: 2rem;
     top: -6px;
 }
 
-.c-card__content {
+.card__content {
     box-sizing: border-box;
     background-color: var(--Dark-blue);
-    border-radius:2.5rem;
-    height: 85%;
+    border-radius:3rem;
+    height: 82.5%;
     z-index: 1;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.25s;
 }
 
-.c-card__person {
+.card__content:hover {
+    background-color: var(--Dark-blue2);
+}
+
+.card__content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__content__header__title {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.card__content__header > img {
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.card__content__header > img:hover {
+    filter: brightness(1.3);
+}
+.card__content__hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__content__current {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.card--work { background-color: var(--Light-orange) }
+.card--study { background-color: var(--Light-red) }
+.card--social { background-color: var(--Violet); }
+.card--self-care { background-color: var(--Soft-orange); }
+.card--play { background-color: var(--Soft-blue);}
+.card--exercise { background-color: var(--Lime-green); }
+
+.card__person {
     grid-row: span 2;
 }
-.c-card--work { background-color: var(--Light-orange) }
-.c-card--study { background-color: var(--Light-red) }
-.c-card--social { background-color: var(--Violet); }
-.c-card--self-care { background-color: var(--Soft-orange); }
-.c-card--play { background-color: var(--Soft-blue);}
-.c-card--exercise { background-color: var(--Lime-green); }
 
-.c-card__person__profile {
+.card__person__profile {
     background-color: var(--Blue);
     height: 65%;
     border-radius:2.5rem;
     padding: 3rem;
 }
-
-.c-card__person__profile__img {
+.card__person__profile__img {
     border-radius: 50%;
     max-width: 8rem;
     margin-bottom: 5rem;
     border: 4px solid #ffffff;
 }
-
-.c-card__person__profile__name {
-    font-size: 4rem;
+.card__person__profile__name {
+    font-size: 4.5rem;
     color: white;
     font-weight: 300;
 }
 
-.c-card--person__times {
+.card--person__times {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,11 +104,44 @@
     box-sizing: border-box;
 }
 
-.c-card--person__times p {
-    font-size: 1.75rem;
+.card--person__times p {
+    font-size: 2rem;
     padding: 0.5rem;
+    cursor: pointer;
 }
 
-.c-card--person__times p:hover {
-    color: #ffffffa4;
+.card--person__times p:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 595px) {
+    .card__content__hours{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .card__person {
+        grid-row: span 1;
+    }
+
+    .card--person__times {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card__person__profile__img {
+        margin-bottom: 1rem;
+    }
+
+    .card__person__profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card__person__profile__name {
+        font-size: 3.7rem;
+    }
 }
