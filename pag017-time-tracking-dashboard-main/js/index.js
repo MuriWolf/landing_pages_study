@@ -17,8 +17,8 @@ function getJson(time) {
             const title = data[c].title;
             cardTitle.textContent = title
             
-            const currentArea = card.querySelector(".card__content__current");
-            const previousArea = card.querySelector(".card__content__previous");
+            const currentArea = card.querySelector(".card__content__hours__current");
+            const previousArea = card.querySelector(".card__content__hours__previous");
             
             const current = data[c].timeframes[time].current;
             const previous = data[c].timeframes[time].previous;
