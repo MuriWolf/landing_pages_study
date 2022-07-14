@@ -12,13 +12,15 @@
     gap: 2.6rem; 
 }
 
+
 @media (max-width: 586px) {
     .l-cards {
         grid-auto-rows: minmax(180px, 1fr);
         grid-template-rows: 250px;
 
+        margin-bottom: 50px;
+        margin-top: 50px;
         max-height: none;
         height: auto;
-        margin-bottom: 50px;
     }
 }

@@ -16,7 +16,15 @@ html {
 body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--Very-dark-blue);
-    margin: 4rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 p {
