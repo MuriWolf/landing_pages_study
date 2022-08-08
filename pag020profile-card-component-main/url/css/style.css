@@ -1,0 +1,48 @@
+/* This project is built up in Bootstrap, here are some adjusts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --font-primary: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-image: url("../../images/bg-pattern-top.svg"), 
+                    url("../../images/bg-pattern-bottom.svg");
+}
+
+.small-plus {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.profile-img {
+    width: 110px;
+    bottom: 55%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 500px) {
+    .profile-img {
+        width: 125px;
+        bottom: 50%; 
+    }
+} 
+
+.rounded {
+    border-radius: 20px !important; 
+}
