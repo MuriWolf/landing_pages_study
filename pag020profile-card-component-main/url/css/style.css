@@ -10,14 +10,15 @@
 }
 
 body {
-    background-color: var(--dark-cyan);
     min-height: 100vh;
     font-family: var(--font-primary);
     font-weight: 400;
-    background-repeat: no-repeat;
-    background-image: url("../../images/bg-pattern-top.svg"), 
-                    url("../../images/bg-pattern-bottom.svg");
+    background: url("../../images/bg-pattern-top.svg") no-repeat,
+    url("../../images/bg-pattern-bottom.svg") no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-color: var(--dark-cyan);
 }
+
 
 .small-plus {
     letter-spacing: 1px;
